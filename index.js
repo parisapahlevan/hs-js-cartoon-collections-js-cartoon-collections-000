@@ -2,7 +2,7 @@ let dwarfArray = ["Doc", "Dopey", "Bashful", "Grumpy"]
 
 function dwarfRollCall(dwarves) {
   let finalString = ''
-  for (let i = 0; i < dwarves.length; i++) { 
+  for (let i = dwarves.length/2; i < dwarves.length; i++) { 
 
     finalString += `${i+1}. ${dwarves[i]} `
   }
@@ -53,11 +53,15 @@ function findTheCheese (foods) {
 let myArray = ["sally", "Bob"]
 
 function wordsWithB(words){
+  let myNewArray = []
 for (let i=0; i<words.length; i++){
   if (words[i][0] === "B"){
-    return true 
+    myNewArray.push(words[i])
   } 
+    
 }
+return myNewArray
+
 }
 
 
