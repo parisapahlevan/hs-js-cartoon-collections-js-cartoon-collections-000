@@ -1,31 +1,40 @@
-let dwarfArray = ["Doc", "Dopey", "Bashful", "Grumpy"];
-
-dwarfRollCall(dwarfArray);
+let dwarfArray = ["Doc", "Dopey", "Bashful", "Grumpy"]
 
 function dwarfRollCall(dwarves) {
   let finalString = ''
   for (let i = 0; i < dwarves.length; i++) { 
+
     finalString += `${i+1}. ${dwarves[i]} `
   }
   return finalString
 }
 
+
+
 function summonCaptainPlanet(planeteerCalls){
   let results=[]
   for (let i = 0; i < planeteerCalls.length; i++) { 
-    results.push(planeteerCalls[i].toUpperCase()+'!')
+    let myElement = planeteerCalls[i].toUpperCase()+'!'
+    results.push(myElement)
   }
-  return results
+
+  return resutls
 }
 
+
+let planeteerCalls = ["earth", "wind", "fire", "water", "heart"]
+
 function longPlaneteerCalls(words){
-  for (let i = 0; i < words.length; i++) { 
-    if(words[i].length > 4){
-      return true
-    }
+  for (let i=0; i<words.length; i++){
+  if(words[i].length > 4){
+    return true 
+  } else{
+    return false
   }
-  return false
 }
+}
+
+
 
 function findTheCheese (foods) {
   for (let i = 0; i < foods.length; i++) { 
@@ -37,3 +46,5 @@ function findTheCheese (foods) {
   }
   return "no cheese!"
 }
+
+
