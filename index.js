@@ -46,6 +46,14 @@ function findTheCheese (foods) {
     }
   }
   return "no cheese!"
+  
+  
+}
+
+let myArray = ["sally", "Bob"]
+
+function wordsWithB(words){
+  return 
 }
 
 
