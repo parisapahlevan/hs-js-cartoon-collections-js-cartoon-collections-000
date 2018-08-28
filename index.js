@@ -53,7 +53,11 @@ function findTheCheese (foods) {
 let myArray = ["sally", "Bob"]
 
 function wordsWithB(words){
-  return 
+for (let i=0; i<words.length; i++){
+  if (words[i][0] === "B"){
+    return true 
+  } 
+}
 }
 
 
